@@ -95,5 +95,36 @@ func main() {
 	// result := superAdd2(1, 2, 3, 4, 5, 6)
 	// fmt.Println(result)
 
-	fmt.Println(canIDrink2(20))
+	//fmt.Println(canIDrink2(20))
+	// a := 2
+	// b := &a
+	// a = 5
+
+	//메모리 주소는 &표시
+	// fmt.Println(&a, &b)
+	// fmt.Println(&a, b)
+
+	//살펴보는거
+	// fmt.Println(*b)
+
+	//d를 이용해서 c바꾸기
+	//d는 c를 주소에 있는 것을 살펴보는 Pointer
+	// c := 2
+	// d := &c
+	// *d = 20
+	// fmt.Println(c)
+
+	//0,1,2,3,4
+	names := [5]string{"dh", "dh1", "dh2"}
+	names[3] = "dh3"
+	names[4] = "dh4"
+	//names[5] = "dh5" 4까지라 오류남
+	fmt.Println(names)
+
+	//length없이 사용
+	names2 := []string{"dh", "dh1", "dh2"}
+
+	//추가해주는 것
+	names2 = append(names2, "dh3")
+	fmt.Println(names2)
 }
