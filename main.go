@@ -65,6 +65,12 @@ func canIDrink2(age int) bool {
 	return false
 }
 
+type person struct {
+	name    string
+	age     int
+	favFood []string
+}
+
 func main() {
 	// //var name string = "DH"
 	// //축약시킨 코드와 위와 똑같다. Go가 알아서 type을 찾아준다.
@@ -115,16 +121,35 @@ func main() {
 	// fmt.Println(c)
 
 	//0,1,2,3,4
-	names := [5]string{"dh", "dh1", "dh2"}
-	names[3] = "dh3"
-	names[4] = "dh4"
-	//names[5] = "dh5" 4까지라 오류남
-	fmt.Println(names)
+	// names := [5]string{"dh", "dh1", "dh2"}
+	// names[3] = "dh3"
+	// names[4] = "dh4"
+	// //names[5] = "dh5" 4까지라 오류남
+	// fmt.Println(names)
 
-	//length없이 사용
-	names2 := []string{"dh", "dh1", "dh2"}
+	// //length없이 사용
+	// names2 := []string{"dh", "dh1", "dh2"}
 
-	//추가해주는 것
-	names2 = append(names2, "dh3")
-	fmt.Println(names2)
+	// //추가해주는 것
+	// names2 = append(names2, "dh3")
+	// fmt.Println(names2)
+
+	// key Type, value Type
+	// nico := map[string]string{"name": "nico", "age": "12"}
+	// fmt.Println(nico)
+
+	// for key, value := range nico {
+	// 	fmt.Println(key, value)
+	// }
+
+	favFood := []string{"kimchi", "ramen"}
+
+	//dh := person{"dh", 24, favFood} 이렇게 써도되지만 아래가 더 가독성이 좋다
+	dh := person{name: "dh", age: 24, favFood: favFood}
+	fmt.Println(dh)
+
+	//특정값만 출력 /이름,나이
+	fmt.Println(dh.name)
+	fmt.Println(dh.age)
+
 }
