@@ -150,5 +150,5 @@ func main() {
 
 	//특정값만 출력
 	fmt.Println(dh.name)
-
+	fmt.Println(dh.age)
 }
