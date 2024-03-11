@@ -148,7 +148,7 @@ func main() {
 	dh := person{name: "dh", age: 24, favFood: favFood}
 	fmt.Println(dh)
 
-	//특정값만 출력
+	//특정값만 출력 /이름,나이
 	fmt.Println(dh.name)
 	fmt.Println(dh.age)
 
